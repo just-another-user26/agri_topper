@@ -1,0 +1,86 @@
+<html>
+
+<head>
+    <title>Happy Birthday Priyanshi Kumari</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="loader">
+                <button id="play">Open Your Surprise</button>
+            </div>
+        </div>
+    </div>
+    <audio class="song" controls loop>
+        <source src="music.mp3">
+        </source>
+        Your browser isn't invited for super fun audio time.
+    </audio>
+    <canvas id="confetti"></canvas>
+    <div class="main">
+        <div class="container pt-4 pt-md-5">
+            <div class="row justify-content-center">
+
+                <div class="col-12 col-xl-6 text-center">
+                    <img src="img/banner.png" alt="Happy Birthday Banner" class="banner-img">
+                </div>
+
+                <div class="col-12 text-center">
+                    <div id="name" class="area">Priyanshi Kumari</div>
+                </div>
+
+                <div class="col-12 text-center">
+                    <div class="type-wrap">
+                        <div id="typed-strings" class="typing">
+                            <h2>Happy Birthday <i id="nae">Priyanshi Kumari</i></h2>
+                            <h2>Dear Priyanshi, have a wonderful day</h2>
+                            <h2>Filled with smiles, joy, and happiness.</h2>
+                        </div>
+                        <span id="typed" style="white-space:pre-wrap;"></span>
+                    </div>
+                </div>
+
+                <div class="col-12 col-xl-4 text-center cake">
+                    <img src="img/cake.gif" alt="Birthday Cake">
+                </div>
+            </div>
+        </div>
+        <img src="img/Balloon-Border.png" width="100%" class="balloon-border" alt="">
+    </div>
+    <section class="questions-section hidden" aria-labelledby="questions-title">
+        <div class="questions-card">
+            <p class="questions-kicker">A few little questions for you ✨</p>
+            <h1 id="questions-title">Priyanshi, I'd love to know!</h1>
+            <form id="birthday-form">
+                <label for="crop">1. If you could choose one crop to grow for the rest of your life, which one would it be and why? 🌱</label>
+                <textarea id="crop" name="crop" rows="3" required></textarea>
+
+                <label for="ncc">2. What is your most memorable experience or favourite moment from your NCC journey? 🇮🇳</label>
+                <textarea id="ncc" name="ncc" rows="3" required></textarea>
+
+                <label for="topper">3. What's the secret behind being a topper in B.Sc. Agriculture? 🏆</label>
+                <textarea id="topper" name="topper" rows="3" required></textarea>
+
+                <label for="personality">4. If you could describe your personality in just three words, what would they be?</label>
+                <input id="personality" name="personality" type="text" maxlength="100" required>
+
+                <label for="dream">5. What is one big dream you wish to achieve in the next five years? ✨</label>
+                <textarea id="dream" name="dream" rows="3" required></textarea>
+
+                <button class="submit-button" type="submit">Send My Answers 💌</button>
+                <p id="form-status" role="status" aria-live="polite"></p>
+            </form>
+        </div>
+    </section>
+</body>
+<script src="https://unpkg.com/magic-snowflakes/dist/snowflakes.min.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/typed.min.js"></script>
+<script src="js/script.js"></script>
+
+</html>
